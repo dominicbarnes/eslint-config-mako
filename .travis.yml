@@ -5,3 +5,11 @@ install: npm update
 cache:
   directories:
   - node_modules
+deploy:
+  provider: npm
+  email: dominic@dbarnes.info
+  api_key:
+    secure: LgIbsJlPjThi7Uc/auUOQYuA1Af22u+wZSrp/oZmCZYTtt/deqKla+AcUVOpjmuEDSaQH+d4N6VJf71TNwPE7Hc/AerNQS6dRBWTEZ6SZRzPSowN2GpQxNh2aGQyDNEm0QQXq3+SX8hjlVcQmaAay7daf8/xGF3ShPW9YdH4lZXPyHnMI3Tu+eTJBv0kIRp80RbFUysqV1KUtIBdq4oFw8C0bI5AjM2yCQ7vE+blTwXNGU5+mDQCMeTbnSLhu1bknup5rcqsNJwWg/ci3ii0cOv1NO3dUm+USSR7FbdOBOPHJcIq2GiLEfyPFCPEJXGsASN/53drAmj3b8qjo/uByvivjqwkp5SJsG4qPW5qFtaNQcHNYHZw8JK8zO1U84dyk6S3RMdHgQfTyjivRl/ODFN2Kb9T2XcjXbBgPVnNnXmCmCcXWFFZBtHKeLv4qxtNwddxYbetI0NisUXj9J0K3ZVGm0JKhYuo4h6XTiXPrdxICp3eM1PpcOEAS/eS7eC5QlFmu4xi4ObmvNoRTcj8Twgt736TCeGqM+9BQ60YVld0ElKGUQ3O2jilLofHWDscEwOXEqAhb2fncIfWwVfhfSoLYrSIbLkvRNbm6779uaFuZFiijWfMClNXh06qT3GFNO/DlvIGdVO6Czral97imLeUIG86rEw6MN/2A/CPy8w=
+  on:
+    tags: true
+    repo: dominicbarnes/eslint-config-mako
